@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html lang="sr">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="icon" href="https://cdn.a1.rs/bsc-p/build/favicon.ico" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Biznis portal" />
+    <link
+      rel="apple-touch-icon"
+      href="https://cdn.a1.rs/bsc-p/build/logo192.png"
+    />
+    <link rel="stylesheet" href="./Moj A1 Biz_files/main.css" />
+
+
+    <style>
+      .headercontainer{
+        max-width: 1254px;
+        position: relative;
+        width: 100%;
+        height: fit-content;
+      }
+      .normalchildH2{
+        margin: 0px !important; 
+      } 
+
+      @keyframes slideIntoPosition {
+  0% {
+    transform: translate3d(-20vw, 20vh, 2vw) rotate(30deg) scale(0.5);
+  }
+  100% {
+    transform: translate3d(0vw, 0vh, 0vw) rotate(0deg) scale(1);
+  }
+}
+.parent {
+    position: relative !important; /* Provides positioning context */
+    width: 100% !important;
+}
+
+
+.child {
+    position: absolute;
+    top: -163%;
+    bottom: 0;
+    right: -58%;
+    left: 0;
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    z-index: 0 !important;
+    transition: 400ms;   
+}
+
+.child img {
+   /* max-width: 800px;*/
+    width: 40%; /* Adjust size as needed */
+    height: auto;
+    z-index: 1; /* Ensure image is on top of other content */
+    animation:slideIntoPosition 1.2s cubic-bezier(0.4, 0.27, 0.02, 0.8) forwards; 
+}
+
+@media (max-width: 690px) {
+  .child {
+    top: -103%;
+    right: -93%;
+   
+}
+.normalchild{
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+}
+@media (max-width: 400px) {
+  .child {
+    top: -17%;
+    right: -99%;
+}
+}
+
+
+.a1-button-v2-secondary-white{
+  
+  background: #0000;
+    border: 2px solid #ffffff;
+    border-radius: 4px;
+    color: #ffffff;
+    cursor: pointer;
+    display: flex;
+    font-family: A1Sans-Regular;
+    padding: 8px 16px;
+}
+/*  
+      .child img {
+            height: auto; 
+            max-width: 100%;
+            width: 80vw; 
+            position: absolute;
+            right: -33%;
+            top: -385%;
+            z-index: 0;
+        }
+
+      @keyframes animateLetterA {
+  0% {
+    transform: translate3d(-20vw, -10vh, 2vw) rotate(120deg) scaleY(0.1);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translate3d(0vw, 0vh, 0vw) rotate(0deg) scaleY(1);
+    opacity: 1;
+  }
+}
+
+.slide-fwd-tr {
+  animation: animateLetterA 3s ease-in-out;
+}
+
+      .slide-fwd-tr {
+            -webkit-animation: slide-fwd-tr 1.95s cubic-bezier(0.165, 0.840, 0.440, 1.000) both;
+                    animation: slide-fwd-tr 1.95s cubic-bezier(0.165, 0.840, 0.440, 1.000) both;
+        }
+
+      @-webkit-keyframes slide-fwd-tr {
+        0% {
+            -webkit-transform: translateZ(160px) translateY(-460px) translateX(-400px)  rotate(120deg) scaleY(0.01);
+            transform: translateZ(160px) translateY(-460px) translateX(-400px)  rotate(120deg) scaleY(0.01);
+            -webkit-transform-origin: 0% 100%;
+            transform-origin: 0% 100%;
+                    
+        }
+        100% {
+            -webkit-transform: translateZ(160px) translateY(-260px) translateX(-300px) rotate(0) scaleY(1);
+            transform: translateZ(160px) translateY(-260px) translateX(-300px) rotate(0) scaleY(1);
+            -webkit-transform-origin: 0% 100%;
+            transform-origin: 0% 100%;
+        }
+        }*/
+        @keyframes slide-fwd-tr {
+        0% {
+              -webkit-transform: translateZ(360px) translateY(-860px) translateX(-400px) rotate(80deg) scaleY(0.01);
+            transform: translateZ(360px) translateY(-460px) translateX(-400px)  rotate(120deg) scaleY(0.01);
+            -webkit-transform-origin: 0% 100%;
+            transform-origin: 0% 100%;
+                    
+        }
+        
+        }
+/*
+OPTIMALNO
+
+        @-webkit-keyframes slide-fwd-tr {
+        0% {
+            -webkit-transform: translateZ(160px) translateY(-360px) translateX(-400px)  rotate(120deg) scaleY(0.01);
+            transform: translateZ(160px) translateY(-360px) translateX(-400px)  rotate(120deg) scaleY(0.01);
+            -webkit-transform-origin: 0% 100%;
+            transform-origin: 0% 100%;
+                    
+        }
+        100% {
+            -webkit-transform: translateZ(160px) translateY(-260px) translateX(-300px) rotate(0) scaleY(1);
+            transform: translateZ(160px) translateY(-260px) translateX(-300px) rotate(0) scaleY(1);
+            -webkit-transform-origin: 0% 100%;
+            transform-origin: 0% 100%;
+        }
+        }
+        @keyframes slide-fwd-tr {
+        0% {
+              -webkit-transform: translateZ(160px) translateY(-360px) translateX(-400px) rotate(120deg) scaleY(0.01);
+            transform: translateZ(160px) translateY(-360px) translateX(-400px)  rotate(120deg) scaleY(0.01);
+            -webkit-transform-origin: 0% 100%;
+            transform-origin: 0% 100%;
+                    
+        }
+        100% {
+            -webkit-transform: translateZ(160px) translateY(-260px) translateX(-300px) rotate(0) scaleY(1);
+            transform: translateZ(160px) translateY(-260px) translateX(-300px) rotate(0) scaleY(1);
+            -webkit-transform-origin: 0% 100%;
+            transform-origin: 0% 100%;
+        }
+        }
+
+STARO
+        @-webkit-keyframes slide-fwd-tr {
+        0% {
+            -webkit-transform: translateZ(0) translateY(0) translateX(0) rotate(0) scaleY(0.1);
+            transform: translateZ(0) translateY(0) translateX(0) rotate(0) scaleY(0.);
+            -webkit-transform-origin: 0% 100%;
+            transform-origin: 0% 100%;
+                    
+        }
+        100% {
+            -webkit-transform: translateZ(160px) translateY(-100px) translateX(100px) rotate(-45deg) scaleY(1);
+            transform: translateZ(160px) translateY(-100px) translateX(100px) rotate(-45deg)  scaleY(1);
+            -webkit-transform-origin: 0% 100%;
+            transform-origin: 0% 100%;
+        }
+        }
+        @keyframes slide-fwd-tr {
+        0% {
+              -webkit-transform: translateZ(0) translateY(0) translateX(0) rotate(0) scaleY(0.1);
+            transform: translateZ(0) translateY(0) translateX(0) rotate(0) scaleY(0.1);
+            -webkit-transform-origin: 0% 100%;
+            transform-origin: 0% 100%;
+                    
+        }
+        100% {
+            -webkit-transform: translateZ(160px) translateY(-100px) translateX(100px) rotate(-45deg) scaleY(1);
+            transform: translateZ(160px) translateY(-100px) translateX(100px) rotate(-45deg)  scaleY(1);
+            -webkit-transform-origin: 0% 100%;
+            transform-origin: 0% 100%;
+        }
+        }
+
+*/
+
+
+
+        .gradient {
+            width: 100%;
+            overflow: hidden;
+            background: linear-gradient(to right, 
+                #BD0903 0%, 
+                #B10602 3%, 
+                #A80501 6%, 
+                #A10401 9%, 
+                #970200 12%, 
+                #920200 15%, 
+                #8E0100 18%, 
+                #8B0100 21%, 
+                #860000 24%, 
+                #820000 27%, 
+                #850000 30%, 
+                #890000 33%, 
+                #8E0000 36%, 
+                #940100 39%, 
+                #9D0200 42%, 
+                #A70301 45%, 
+                #B30502 48%, 
+                #C30803 51%, 
+                #D40C05 54%, 
+                #DE0E06 57%, 
+                #E51108 60%, 
+                #E91309 63%, 
+                #EC170C 66%, 
+                #F11F14 69%, 
+                #F42C22 72%, 
+                #F53127 75%, 
+                #F53127 78%, 
+                #F22E25 81%, 
+                #EB2920 84%, 
+                #E02119 87%, 
+                #D81A13 90%, 
+                #D3150E 93%, 
+                #CE0F08 96%, 
+                #CE0F08 99%, 
+                #CE0F08 100%);
+        }
+
+        .parent {
+            width: 100%; /* Set the width of the parent */
+            height: auto !important; /* Set the height of the parent */
+            overflow: hidden; /* Hide the overflow (mask the image) */
+            /* position: relative; */ /* Position relative to keep child in context */
+            display: flex;
+            justify-content: center;
+            padding-top: 3rem !important;
+            padding-bottom: 2rem !important;
+        }
+
+        .normalchild {
+            max-width: 1221px;
+            width: 100% !important;
+            /* margin: 0px 24px !important; */
+            display: flex;
+            /*justify-content: space-between;*/
+            height: fit-content;
+            padding: 0px 24px !important;
+            position: relative;
+            z-index: 1;
+        } 
+        .dflexalways {
+            max-width: 1221px;
+            width: 100% !important;
+            /* margin: 0px 24px !important; */
+            display: flex;
+            /*justify-content: space-between;*/
+            height: fit-content;
+            padding: 0px 24px !important;
+            position: relative;
+            z-index: 1;
+        } 
+        .white {
+            color: white;
+        }
+        .whitebtn {
+            color: white;
+            border: 2px solid white
+        }
+       
+        .breadcrumbs,
+.breadcrumbs * {
+    box-sizing: border-box;
+}
+
+.breadcrumbs {
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+    align-items: center;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    height: 24px;
+    position: relative;
+}
+
+.breadcrumb-1 {
+    border-radius: var(--corner-radius, 4px);
+    padding: 4px var(--space-xs, 8px) 4px var(--space-xs, 8px);
+    display: flex;
+    flex-direction: row;
+    gap: var(--space-xxs, 4px);
+    align-items: center;
+    justify-content: center;
+    align-self: stretch;
+    flex-shrink: 0;
+    min-width: 40px;
+    position: relative;
+    overflow: hidden;
+}
+
+.label {
+    color: var(--neutral-grey1, #f2f2f2);
+    text-align: center;
+    font-family: var(--responsive-p2-font-family, 'A1Sans-Regular', sans-serif);
+    font-size: var(--responsive-p2-font-size, 14px);
+    line-height: var(--responsive-p2-line-height, 20px);
+    font-weight: var(--responsive-p2-font-weight, 400);
+    opacity: 0.8;
+    position: relative;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.chevron {
+    align-self: stretch;
+    flex-shrink: 0;
+    width: 24px;
+    height: auto;
+    position: relative;
+    overflow: visible;
+}
+
+.breadcrumb-2 {
+    border-radius: var(--corner-radius, 4px);
+    padding: 4px var(--space-xs, 8px) 4px var(--space-xs, 8px);
+    display: flex;
+    flex-direction: row;
+    gap: var(--space-xxs, 4px);
+    align-items: center;
+    justify-content: center;
+    align-self: stretch;
+    flex-shrink: 0;
+    min-width: 40px;
+    position: relative;
+    overflow: hidden;
+}
+
+.chevron2 {
+    align-self: stretch;
+    flex-shrink: 0;
+    width: 24px;
+    height: auto;
+    position: relative;
+    overflow: visible;
+}
+
+.breadcrumb-3 {
+    border-radius: var(--corner-radius, 4px);
+    padding: 10px var(--space-xs, 8px) 10px var(--space-xs, 8px);
+    display: flex;
+    flex-direction: row;
+    gap: var(--space-xxs, 4px);
+    align-items: center;
+    justify-content: center;
+    align-self: stretch;
+    flex-shrink: 0;
+    min-width: 40px;
+    position: relative;
+    overflow: hidden;
+}
+
+.label2 {
+    color: var(--neutral-grey1, #f2f2f2);
+    text-align: center;
+    font-family: var(--responsive-p2-font-family, 'A1Sans-Bold', sans-serif);
+    font-size: var(--responsive-p2-font-size, 14px);
+    line-height: var(--responsive-p2-line-height, 20px);
+    font-weight: var(--responsive-p2-font-weight, 400);
+    opacity: 0.8;
+    position: relative;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+
+.label {
+    color: var(--neutral-grey1, #f2f2f2);
+    text-align: left;
+    font-family: var(--responsive-p3-font-family, 'A1Sans-Regular', sans-serif);
+    font-size: var(--responsive-p3-font-size, 12px);
+    line-height: var(--responsive-p3-line-height, 16px);
+    letter-spacing: var(--responsive-p3-letter-spacing, 0.5px);
+    font-weight: var(--responsive-p3-font-weight, 400);
+    position: relative;
+    align-self: stretch;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+
+.breadcrumb-10 {
+    border-radius: var(--corner-radius, 4px);
+    padding: var(--space-xs, 8px) 8px var(--space-xs, 8px) 0px;
+    display: flex;
+    flex-direction: row;
+    gap: var(--space-xxs, 4px);
+    align-items: center;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    width: 32px;
+    min-width: 32px;
+    position: relative;
+    overflow: hidden;
+}
+
+.icon {
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    position: relative;
+    overflow: visible;
+}
+    </style>
+
+
+    <style>
+      .rh1 {
+        font-size: 24px;
+        line-height: 30px;
+        font-family: A1Serif-Bold;
+      }
+      .rh2 {
+        font-size: 20px;
+        line-height: 26px;
+        font-family: A1Serif-Bold;
+      }
+      .rh3 {
+        font-size: 18px;
+        line-height: 24px;
+        font-family: A1Serif-Bold;
+      }
+      .rh3_regular {
+        font-size: 18px;
+        line-height: 24px;
+        font-family: A1Serif-Regular;
+        font-weight: 400 !important;
+      }
+      .rh4 {
+        font-size: 16px;
+        line-height: 22px;
+        font-family: A1Serif-Bold;
+      }
+      .rp1 {
+        font-size: 12px;
+        line-height: 18px;
+        font-family: A1Sans-Regular;
+      }
+      .rp2 {
+        font-size: 12px;
+        line-height: 18px;
+        font-family: A1Sans-Regular;
+      }
+      .rp3 {
+        font-size: 12px;
+        line-height: 16px;
+        font-family: A1Sans-Regular;
+      }
+      .rlink {
+        font-size: 14px;
+        line-height: 18px;
+        font-family: A1Sans-Regular;
+      }
+      @media (min-width: 375px) {
+        .rh1 {
+          font-size: 32px;
+          line-height: 40px;
+        }
+        .rh2 {
+          font-size: 28px;
+          line-height: 36px;
+        }
+        .rh3 {
+          font-size: 20px;
+          line-height: 28px;
+        }
+        .rh3_regular {
+          font-size: 20px;
+          line-height: 28px;
+        }
+        .rh4 {
+          font-size: 18px;
+          line-height: 24px;
+        }
+        .rp1 {
+          font-size: 14px;
+          line-height: 20px;
+        }
+        .rp2 {
+          font-size: 12px;
+          line-height: 18px;
+        }
+        .rp3 {
+          font-size: 12px;
+          line-height: 16px;
+        }
+        .rlink {
+          font-size: 14px;
+          line-height: 18px;
+        }
+      }
+      @media (min-width: 690px) {
+        .rh1 {
+          font-size: 36px;
+          line-height: 46px;
+        }
+        .rh2 {
+          font-size: 30px;
+          line-height: 38px;
+        }
+        .rh3 {
+          font-size: 22px;
+          line-height: 30px;
+        }
+        .rh3_regular {
+          font-size: 22px;
+          line-height: 30px;
+        }
+        .rh4 {
+          font-size: 20px;
+          line-height: 28px;
+        }
+        .rp1 {
+          font-size: 14px;
+          line-height: 20px;
+        }
+        .rp2 {
+          font-size: 14px;
+          line-height: 20px;
+        }
+        .rp3 {
+          font-size: 12px;
+          line-height: 16px;
+        }
+        .rlink {
+          font-size: 14px;
+          line-height: 18px;
+        }
+      }
+      @media (min-width: 1024px) {
+        .rh1 {
+          font-size: 48px;
+          line-height: 60px;
+        }
+        .rh2 {
+          font-size: 32px;
+          line-height: 40px;
+        }
+        .rh3 {
+          font-size: 26px;
+          line-height: 32px;
+        }
+        .rh3_regular {
+          font-size: 26px;
+          line-height: 32px;
+        }
+        .rh4 {
+          font-size: 22px;
+          line-height: 30px;
+        }
+        .rp1 {
+          font-size: 16px;
+          line-height: 22px;
+        }
+        .rp2 {
+          font-size: 14px;
+          line-height: 20px;
+        }
+        .rp3 {
+          font-size: 12px;
+          line-height: 16px;
+        }
+        .rlink {
+          font-size: 16px;
+          line-height: 20px;
+        }
+      }
+    </style>
+    <title>Moj A1 Biz</title>
+    <script async="" src="./Moj A1 Biz_files/clarity.js.download"></script>
+    <script async="" src="./Moj A1 Biz_files/mpqbl20983"></script>
+    <script
+      type="text/javascript"
+      async=""
+      src="./Moj A1 Biz_files/js"
+    ></script>
+    <script
+      type="text/javascript"
+      async=""
+      src="./Moj A1 Biz_files/js(1)"
+    ></script>
+    <script async="" src="./Moj A1 Biz_files/gtm.js.download"></script>
+    <script src="./Moj A1 Biz_files/digi_runner.js.download"></script>
+    <link href="./Moj A1 Biz_files/main.d77e28e1.css" rel="stylesheet" />
+    <style data-emotion="css" data-s=""></style>
+    <script
+      src="./Moj A1 Biz_files/otBannerSdk.js.download"
+      async=""
+      type="text/javascript"
+    ></script>
+   
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./Moj A1 Biz_files/748.2a5bf290.chunk.css"
+    />
+  </head>
+  <body class="/moja1biz/ /moja1biz/ban/">
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-T57QW2S"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe></noscript
+    ><noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root">
+      <div class="page">
+        <div>
+          <header class="t-header-main js-header-main">
+            <header class="o-top-bar">
+              <div class="container">
+                <div class="o-top-bar__menu-left">
+                  <div class="m-footer-nav-menu">
+                    <a
+                      href="https://a1.rs/privatni"
+                      class="a-01-text__primary--xs lh-large privatni active"
+                      >PRIVATNI</a
+                    ><a
+                      href="https://a1.rs/poslovni"
+                      class="a-01-text__primary--xs lh-large poslovni"
+                      >POSLOVNI</a
+                    ><a
+                      href="https://a1.rs/nasa-mreza"
+                      class="a-01-text__primary--xs lh-large nasa-mreza"
+                      >NAŠA MREŽA</a
+                    ><a
+                      href="https://a1.rs/bezbedniklinci"
+                      class="a-01-text__primary--xs lh-large bezbedni-klinci"
+                      >BEZBEDNI KLINCI</a
+                    ><a
+                      href="https://a1.rs/o-a1"
+                      class="a-01-text__primary--xs lh-large o-nama"
+                      >O A1</a
+                    >
+                  </div>
+                </div>
+                <div class="o-top-bar__menu-right">
+                  <div class="m-footer-nav-menu">
+                    <a
+                      href="https://a1.rs/poslovni/moj_a1_biz"
+                      class="a-01-text__primary--xs lh-large moj-a1-biz"
+                      >MOJ A1 BIZ</a
+                    ><a
+                      href="https://a1.rs/poslovni/poslovni-podrska"
+                      class="a-01-text__primary--xs lh-large podrska"
+                      >PODRŠKA BIZ</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </header>
+            <div class="o-navbar">
+              <div class="container">
+                <div class="o-navbar__left-menu-wrapper">
+                  <div class="o-navbar__logo">
+                    <a
+                      class="a-image"
+                      type="button"
+                      href="https://a1.rs/moja1biz"
+                      style="
+                        width: 51px;
+                        height: 100%;
+                        padding-left: 3px;
+                        padding-right: 3px;
+                      "
+                      ><img
+                        src="./Moj A1 Biz_files/a1-logo-icon-48x48.f7d7363f6076136f0d54b2b0f4f36055.svg"
+                        alt="A1 Logo"
+                    /></a>
+                  </div>
+                  <div class="o-navbar__menu-navigation">
+                    <div class="o-navbar-menu">
+                      <div
+                        class="js-menu-item o-navbar-menu__menu-item here-b devices-class"
+                      >
+                        <a
+                          class="a-01-text__secondary--base main-navbar-link lh-large devices"
+                          href="https://a1.rs/moja1biz/devices"
+                          >Uređaji</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="o-navbar__right-menu-wrapper">
+                  <div class="m-image-with-badge" style="margin-right: 8px">
+                    <button class="a-image">
+                      <img
+                        src="./Moj A1 Biz_files/icon-notifications-bell-black.38f4faddedb74c588b029b078a68ee30.svg"
+                        alt="Default notifications icon"
+                      />
+                    </button>
+                  </div>
+                  <div class="m-image-with-badge" style="margin-right: 8px">
+                    <button class="a-image">
+                      <img
+                        src="./Moj A1 Biz_files/icon-profile-black-with-badge.7140a5186d6f131ee6b6236effac98da.svg"
+                        alt="Default profile icon"
+                      />
+                    </button>
+                  </div>
+                  <div
+                    class="o-navbar__menu-button js-drawer-button"
+                    data-toggle-drawer="drwr-mobile-menu"
+                  >
+                    <button class="a-image">
+                      <img
+                        src="./Moj A1 Biz_files/icon-mobile-menu-black.c6f02a8b951743884b52d52e79a4e897.svg"
+                        alt="Menu toggle"
+                      />
+                    </button>
+                  </div>
+                </div>
+
+                
+              </div>
+            </div>
+            <div>
+           
+              <div class="overlay" data-toggle-drawer="drwr-mobile-menu"></div>
+            </div>
+            <div class="notifications-drawer-main"></div>
+          </header>
+
+
+          <div class="pb-16 pt-6 mob:py-16 mob:flex gradient parent" style="    padding-top: 130px;">
+            <div class="headercontainer">
+              
+            <div class="container normalchild  mob:flex">
+                <h2 class="rh3_regular  flex-1 white normalchildH2">Dobro došli na Moj&nbsp;A1&nbsp;Biz&nbsp;portal</h2>
+                <div><a class="items-center rlink  a1-button-v2-secondary-white inline-flex whitebtn" 
+                        href="https://a1.rs/poslovni/poslovni-podrska/faq-single-view?id=127">Uputstva za portal</a></div>
+            </div>
+
+            <div class="child " >
+                <img class="slide-fwd-tr rotate-90-cw  scale-up-ver-bottom" src="image.jpg" alt="Sample Image">
+            </div>
+        
+          </div>
+        </div>
+
+        <br>
+        <div class="pb-16 pt-6 mob:py-16 mob:flex gradient parent" style="    padding-top: 130px;">
+          <div class="headercontainer">
+            
+          <div class="container normalchild  mob:flex">
+              <h2 class="rh3_regular  flex-1 white normalchildH2">Pregled svih notifikacija&nbsp;i&nbsp;zahteva</h2>
+         </div>
+
+          <div class="child " >
+              <img class="slide-fwd-tr rotate-90-cw  scale-up-ver-bottom" src="image.jpg" alt="Sample Image">
+          </div>
+      
+        </div>
+      </div>  
+
+      <br>
+      <div class="pb-16 pt-6 mob:py-16 mob:flex gradient parent" style="    padding-top: 130px;">
+        <div class="headercontainer">
+          <div class="breadcrumbs">
+            <div class="breadcrumb-1">
+                <div class="label"> Početna </div>
+            </div><svg class="chevron" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path opacity="0.8" d="M9.9375 18.222L8.8125 17.097L12.9367 12.9728L8.8125 8.84705L9.9375 7.72205L15.1875 12.9736L9.9375 18.222Z" fill="#F2F2F2" />
+            </svg>
+            <div class="breadcrumb-2">
+                <div class="label"> Računi </div>
+            </div><svg class="chevron2" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path opacity="0.8" d="M9.9375 18.222L8.8125 17.097L12.9367 12.9728L8.8125 8.84705L9.9375 7.72205L15.1875 12.9736L9.9375 18.222Z" fill="#F2F2F2" />
+            </svg>
+            <div class="breadcrumb-3">
+                <div class="label2"> Račun 00001 </div>
+            </div>
+        </div>
+        <div class="container normalchild">
+          <div class="breadcrumb-10">
+            <svg class="icon" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3.75 12.1807L11.7375 20.1682L12.795 19.1107L5.865 12.1807L12.795 5.25071L11.7375 4.19321L3.75 12.1807ZM8.745 12.9307L20.25 12.9307L20.25 11.4307L8.745 11.4307L7.995 12.1807L8.745 12.9307Z" fill="white" />
+            </svg>
+            </div>
+            <div>
+            <h2 class="rh3_regular  flex-1 white normalchildH2">dugacaaaaaaaaaaaaak tekst dugacaaaaaaaaaaaaak tekst&nbsp;i&nbsp;zahteva</h2>
+            <div class="label"> Glavni račun - stomatologija dugacaaaaaaaaaaaaak tekst </div>
+            </div>
+       </div>
+
+        <div class="child " >
+            <img class="slide-fwd-tr rotate-90-cw  scale-up-ver-bottom" src="image.jpg" alt="Sample Image">
+        </div>
+    
+      </div>
+    </div>  
+        
+      </div>
+    </div>
+  </div>
+  </body>
+</html>
